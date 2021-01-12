@@ -30,7 +30,8 @@ A re-usable module was used to create lightweight abstractions,to describe the i
 After initializing terraform, terraform plan and terraform apply created the EC working directories. These directories contain our main configuration file: main.tf to form the root module. The root module integrated the variable.tf and output.tf by passing output values from one to input values of another.
 The docker.sh file shows configuration to install docker
 The variables.tf file defined the variables
-The 
+The output.tf file defined the output(Private IP address)
+
 
 The EC1 directory shows configuration for provisioning an ubunbtu EC2 instance with docker runtime and an nginx container while The EC2 directory showed how the module was used in a separate script.
 
